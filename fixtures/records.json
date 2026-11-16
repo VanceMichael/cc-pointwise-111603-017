@@ -1,20 +1,17 @@
 [
   {
-    "sourceId": "job-board-demo-1",
-    "source": "sample-source",
-    "observedAt": "2026-11-16T09:00:00Z",
-    "label": "招聘岗位",
+    "sourceId": "J1",
+    "source": "岗位信息目录",
+    "observedAt": "2026-11-16T08:00:00Z",
+    "label": "资料员",
     "attributes": {
-      "sample": true
-    }
-  },
-  {
-    "sourceId": "job-board-demo-2",
-    "source": "sample-source",
-    "observedAt": "2026-11-16T09:05:00Z",
-    "label": "招聘岗位 2",
-    "attributes": {
-      "sample": true
+      "jobId": "J1",
+      "employer": "E1",
+      "title": "资料员",
+      "cycle": "C1",
+      "state": "open",
+      "modifiedAt": "2026-11-16T08:00:00Z",
+      "closesAt": "2026-12-01T00:00:00Z"
     }
   }
 ]
