@@ -31,6 +31,108 @@
           }
         }
       }
+    },
+    "replayed": {
+      "routes": {
+        "/careers/jobs": {
+          "contentType": "text/html; charset=utf-8",
+          "body": "<!doctype html><html><body><script type=\"application/json\" class=\"source-record\">{\"jobId\": \"J1\", \"employer\": \"E1\", \"title\": \"资料员\", \"cycle\": \"C1\", \"state\": \"open\", \"modifiedAt\": \"2026-11-16T07:00:00Z\", \"closesAt\": \"2026-12-01T00:00:00Z\"}</script></body></html>",
+          "etag": "\"replayed\""
+        },
+        "/careers/coverage": {
+          "contentType": "application/json",
+          "body": {
+            "employer": "E1",
+            "complete": true
+          }
+        }
+      }
+    },
+    "reopened": {
+      "routes": {
+        "/careers/jobs": {
+          "contentType": "text/html; charset=utf-8",
+          "body": "<!doctype html><html><body><script type=\"application/json\" class=\"source-record\">{\"jobId\": \"J1\", \"employer\": \"E1\", \"title\": \"资料员\", \"cycle\": \"C2\", \"state\": \"open\", \"modifiedAt\": \"2026-11-18T08:00:00Z\", \"closesAt\": \"2026-12-20T00:00:00Z\"}</script></body></html>",
+          "etag": "\"reopened\""
+        },
+        "/careers/coverage": {
+          "contentType": "application/json",
+          "body": {
+            "employer": "E1",
+            "complete": true
+          }
+        }
+      }
+    },
+    "paged": {
+      "routes": {
+        "/careers/jobs": {
+          "contentType": "text/html; charset=utf-8",
+          "body": "<!doctype html><html><body><script type=\"application/json\" class=\"source-record\">{\"jobId\": \"J1\", \"employer\": \"E1\", \"title\": \"资料员\", \"cycle\": \"C1\", \"state\": \"open\", \"modifiedAt\": \"2026-11-16T08:00:00Z\", \"closesAt\": \"2026-12-01T00:00:00Z\"}</script><a rel=\"next\" href=\"/careers/jobs?page=2\">下一页</a></body></html>",
+          "etag": "\"paged-1\""
+        },
+        "/careers/jobs?page=2": {
+          "contentType": "text/html; charset=utf-8",
+          "body": "<!doctype html><html><body><script type=\"application/json\" class=\"source-record\">{\"jobId\": \"J2\", \"employer\": \"E1\", \"title\": \"安全员\", \"cycle\": \"C1\", \"state\": \"open\", \"modifiedAt\": \"2026-11-16T10:00:00Z\", \"closesAt\": \"2026-12-05T00:00:00Z\"}</script></body></html>",
+          "etag": "\"paged-2\""
+        },
+        "/careers/coverage": {
+          "contentType": "application/json",
+          "body": {
+            "employer": "E1",
+            "complete": true
+          }
+        }
+      }
+    },
+    "partial": {
+      "routes": {
+        "/careers/jobs": {
+          "contentType": "text/html; charset=utf-8",
+          "body": "<!doctype html><html><body><script type=\"application/json\" class=\"source-record\">{\"jobId\": \"J2\", \"employer\": \"E1\", \"title\": \"安全员\", \"cycle\": \"C1\", \"state\": \"open\", \"modifiedAt\": \"2026-11-16T10:00:00Z\", \"closesAt\": \"2026-12-05T00:00:00Z\"}</script></body></html>",
+          "etag": "\"partial\""
+        },
+        "/careers/coverage": {
+          "contentType": "application/json",
+          "body": {
+            "employer": "E1",
+            "complete": false,
+            "reason": "maintenance"
+          }
+        }
+      }
+    },
+    "missing": {
+      "routes": {
+        "/careers/jobs": {
+          "contentType": "text/html; charset=utf-8",
+          "body": "<!doctype html><html><body><script type=\"application/json\" class=\"source-record\">{\"jobId\": \"J2\", \"employer\": \"E1\", \"title\": \"安全员\", \"cycle\": \"C1\", \"state\": \"open\", \"modifiedAt\": \"2026-11-16T10:00:00Z\", \"closesAt\": \"2026-12-05T00:00:00Z\"}</script></body></html>",
+          "etag": "\"missing\""
+        },
+        "/careers/coverage": {
+          "contentType": "application/json",
+          "body": {
+            "employer": "E1",
+            "complete": true
+          }
+        }
+      }
+    },
+    "expired": {
+      "routes": {
+        "/careers/jobs": {
+          "contentType": "text/html; charset=utf-8",
+          "body": "<!doctype html><html><body><script type=\"application/json\" class=\"source-record\">{\"jobId\": \"J1\", \"employer\": \"E1\", \"title\": \"资料员\", \"cycle\": \"C1\", \"state\": \"open\", \"modifiedAt\": \"2026-11-16T08:00:00Z\", \"closesAt\": \"2026-11-17T00:00:00Z\"}</script></body></html>",
+          "etag": "\"expired\""
+        },
+        "/careers/coverage": {
+          "contentType": "application/json",
+          "body": {
+            "employer": "E1",
+            "complete": true
+          }
+        }
+      }
     }
   }
 }
